@@ -1,4 +1,10 @@
 # Vortex
 ## Commander-style File Manager in 16-bit Assembler for DOS
 
-Originally assembled using A86
+### Build ( [Requires A86 Assembler](https://www.eji.com) )
+
+From the command-line: `build`
+
+### Run
+
+From the command-line: `VX`
