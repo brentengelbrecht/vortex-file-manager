@@ -3,7 +3,7 @@
 
 ### Build 
 
-[Requires A86 Assembler](http://www.eji.com) to be in the PATH
+Requires [A86 Assembler](http://www.eji.com) to be in the PATH
 
 From the command-line: `build`
 
