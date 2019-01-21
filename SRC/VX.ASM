@@ -446,16 +446,8 @@ Err_Bad_Func	db	'Bad function code for open file !', '$'
 Err_Bad_Handle	db	'Invalid file handle !', '$'
 Err_Lost_Attr	db	'File attribute cannot be determined !', '$'
 
-Program_Header	db	'Vortex', SPACE, 240, SPACE
-		db	'Version 1.01b', SPACE, 240, SPACE
-		db	'Copyright (c) 1993', SPACE
-		db	'Brent Engelbrecht'
-		db	END_OF_RECORD
-
-Tester_Header	db	'Vortex', SPACE, 240, SPACE
-		db	'(', 34, 'KISS MY ASS, NC !', 34, ')', SPACE, 240, SPACE
-		db	'14 Dec 1993', SPACE, 240, SPACE
-		db	'Brent Engelbrecht'
+Program_Header	db	240, SPACE, 'Vortex File Manager', SPACE, 240
+		db	SPACE, 'Version 0.8.0', SPACE, 240
 		db	END_OF_RECORD
 
 FKey_Template	db	'F1 Help', SPACE
@@ -564,8 +556,7 @@ Begin:
 		push	ax
 		xor	ax, ax
 		push	ax
-		lea	ax, Tester_Header
-;		lea	ax, Program_Header
+		lea	ax, Program_Header
 		push	ax
 		mov	ax, Attr_ProgHead
 		push	ax
